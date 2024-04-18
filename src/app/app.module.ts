@@ -11,6 +11,7 @@ import { HomeComponent } from './home/home.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { OtpComponent } from './otp/otp.component';
 import { FormsModule } from '@angular/forms';
+import { ClaimsComponent } from './claims/claims.component';
  
 
 @NgModule({
@@ -21,7 +22,8 @@ import { FormsModule } from '@angular/forms';
     HeaderComponent,
     HomeComponent,
     SidebarComponent,
-    OtpComponent
+    OtpComponent,
+    ClaimsComponent
   ],
   imports: [
     BrowserModule,
@@ -30,7 +32,7 @@ import { FormsModule } from '@angular/forms';
     FormsModule
   ],
   providers: [
-    provideClientHydration()
+    // provideClientHydration()
   ],
   bootstrap: [AppComponent]
 })

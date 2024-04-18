@@ -41,12 +41,16 @@
               "src/assets/My Templetes/styles/bootstrap/dist/css/bootstrap.min.css",
               "src/assets/My Templetes/styles/font-awesome/css/font-awesome.min.css",
               "src/assets/My Templetes/component/css/custom.min.css"
+              
             ],
             "scripts": [
               "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
               "src/assets/My Templetes/styles/jquery/dist/jquery.min.js",
               "src/assets/My Templetes/styles/bootstrap/dist/js/bootstrap.bundle.min.js",
-              "src/assets/My Templetes/component/js/custom.min.js"
+              "src/assets/My Templetes/component/js/custom.min.js",
+              "src/assets/startbootstrap/js/scripts.js"
+               
+
             ],
             "server": "src/main.server.ts",
             "prerender": true,
