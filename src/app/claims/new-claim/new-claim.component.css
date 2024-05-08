@@ -1,0 +1,12 @@
+.container {
+    width: 35%; /* Adjust the width as needed */
+    margin: auto; /* Centers the container horizontally */
+    margin-top: 50px;
+    padding-top: 20px;
+    background-color: none;
+    
+  }
+  form{
+    background-color: white;
+    font-weight: bold;
+  }
