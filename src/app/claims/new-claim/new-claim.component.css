@@ -1,6 +1,6 @@
-.container {
-    width: 35%; /* Adjust the width as needed */
-    margin: auto; /* Centers the container horizontally */
+/* .container {
+    width: 35%; 
+    margin: auto; 
     margin-top: 50px;
     padding-top: 20px;
     background-color: none;
@@ -9,4 +9,217 @@
   form{
     background-color: white;
     font-weight: bold;
+  } */
+
+  
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-top: 30px;
+}
+
+form {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background:rgb(250, 249, 249)
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.row-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.row1 {
+  flex: 1;
+  min-width: 250px;
+  margin-right: 20px;
+}
+
+.row1:last-child {
+  margin-right: 0;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.checkbox-p {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.checkbox-p p {
+  margin-left: 10px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background: #d7d7d8;
+  color: #0c0606;
+  cursor: pointer;
+}
+
+.footer {
+  text-align: center;
+}
+
+.footer p {
+  margin: 5px 0;
+}
+
+/* Responsive styling */
+
+/* Extra small devices (phones, 600px and down) */
+@media screen and (max-width: 600px) {
+  form {
+    padding: 15px;
   }
+
+  .row-wrapper {
+    flex-direction: column;
+  }
+
+  .row1 {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+
+  .row1:last-child {
+    margin-bottom: 0;
+  }
+
+  .btn {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .btn:last-child {
+    margin-bottom: 0;
+  }
+
+  .buttons {
+    flex-direction: column;
+  }
+}
+
+/* Small devices (tablets, 601px to 768px) */
+@media screen and (min-width: 601px) and (max-width: 768px) {
+  form {
+    padding: 20px;
+  }
+
+  .row-wrapper {
+    flex-direction: column;
+  }
+
+  .row1 {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+
+  .row1:last-child {
+    margin-bottom: 0;
+  }
+
+  .btn {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .btn:last-child {
+    margin-bottom: 0;
+  }
+
+  .buttons {
+    flex-direction: column;
+  }
+}
+
+/* Medium devices (desktops, 769px to 992px) */
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  form {
+    padding: 25px;
+  }
+
+  .row-wrapper {
+    flex-direction: row;
+  }
+
+  .row1 {
+    margin-right: 20px;
+    margin-bottom: 0;
+  }
+
+  .row1:last-child {
+    margin-right: 0;
+  }
+
+  .btn {
+    width: auto;
+    margin-bottom: 0;
+  }
+
+  .buttons {
+    flex-direction: row;
+  }
+}
+
+/* Large devices (large desktops, 993px and up) */
+@media screen and (min-width: 993px) {
+  form {
+    padding: 30px;
+  }
+
+  .row-wrapper {
+    flex-direction: row;
+  }
+
+  .row1 {
+    margin-right: 20px;
+    margin-bottom: 0;
+  }
+
+  .row1:last-child {
+    margin-right: 0;
+  }
+
+  .btn {
+    width: auto;
+    margin-bottom: 0;
+  }
+
+  .buttons {
+    flex-direction: row;
+  }
+}

@@ -14,7 +14,7 @@ import { FormsModule } from '@angular/forms';
 import { ClaimsComponent } from './claims/claims.component';
 import { NewClaimComponent } from './claims/new-claim/new-claim.component';
 import { ClaimHistoryComponent } from './claims/claim-history/claim-history.component';
-
+import { ReactiveFormsModule } from '@angular/forms';
 
  
 
@@ -39,7 +39,7 @@ import { ClaimHistoryComponent } from './claims/claim-history/claim-history.comp
     AppRoutingModule,
     BrowserAnimationsModule,
     FormsModule,
-  
+    ReactiveFormsModule
   ],
   providers: [
     // provideClientHydration()
