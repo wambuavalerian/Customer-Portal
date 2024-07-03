@@ -25,7 +25,7 @@ export class NewClaimComponent implements OnInit {
   constructor() {
     this.registrationForm = new FormGroup({
       id: new FormControl('0'),
-      firstName: new FormControl(''),
+      select: new FormControl(''),
       lastName: new FormControl(''),
       email: new FormControl(''),
       phone: new FormControl(''),

@@ -53,8 +53,8 @@
             <h6>Fill the form accurately</h6>
         </div>
         <div class="row">
-            <div class="line1 row-wrapper">
-                <div class="form-group">
+    
+                <div class="form-group" style="margin-right: 100px;">
                     <label>Select Policy you are making a Claim for:</label>
                     <select class="form-control" id="exampleFormControlSelect1">
                       <option value="">Select Policy</option>
@@ -68,52 +68,49 @@
                     <label>Date of Incident</label>
                     <input type="date" class="form-control">
                   </div>
-            </div>
-            <div class="line2 row-wrapper">
-                <div class="row1">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" class="form-control" formControlName="email" required>
-                </div>
-                <div class="row1">
-                    <label for="phone">Phone</label>
-                    <input type="tel" id="phone" class="form-control" formControlName="phone" required>
-                </div>
-            </div>
-            <div class="line3 row-wrapper">
-                <div class="row1">
-                    <label for="kraPin">KRA PIN</label>
-                    <input type="text" id="kraPin" class="form-control" formControlName="kraPin" required>
-                </div>
-                <div class="row1">
-                    <label for="idNumber">ID NUMBER</label>
-                    <input type="text" id="idNumber" class="form-control" formControlName="idNumber" required>
-                </div>
-            </div>
-            <div class="line4 row-wrapper">
-                <div class="row1">
-                    <label for="password">Password</label>
-                    <input type="password" id="password" class="form-control" formControlName="password" required>
-                </div>
-                <div class="row1">
-                    <label for="confirmPassword">Confirm Password</label>
-                    <input type="password" id="confirmPassword" class="form-control" formControlName="confirmPassword" required>
-                </div>
-            </div>
+           
+            
+              <div class="form-group" style="margin-right: 100px;">
+                <label>Date of Incident</label>
+                <input type="date" class="form-control">
+              </div>
+              <div class="form-group">
+                <label>Location of Incident</label>
+                <input type="text" class="form-control">
+              </div>
+            
+            
+              <div class="form-group">
+                <label>Description of Incident</label>
+                <textarea class="form-control"></textarea>
+              </div>
+              <div class="form-group">
+                <label>Estimated Damage</label>
+                <input type="number" class="form-control">
+              </div>
+            
+            
+                <div class="form-group">
+      <label for="exampleFormControlTextarea1">Description of Loss</label>
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    </div>
+
+            
         </div>
-        <div class="checkbox-p">
-            <input type="checkbox" required><p>I acknowledge that I have read and understood the "online privacy agreement"</p>
-        </div>
+
         <div class="row1 buttons">
-            <button class="btn btn-secondary back-btn" style="margin-right: 100px;width: 300px; border-radius: 10px; background-color: transparent; color: inherent;">Back</button>
-            <button class="btn btn-secondary register-btn" style="width: 300px;" type="submit" (click)="onSaveUser()">Register</button>
         </div>
+
         <div class="footer">
-            <p>Already a member?</p><a href="#registeration">Click here to login</a>
+            
             <p><b>Contact Us</b><br>
                 +254 (0) 12345678 | +254 (0) 12345678 | +254 (0) 12345678 |<br>
                 EQUITY INSURANCE GROUP is regulated by the Insurance Regulatory Authority, Capital Market Authority, and Retirements Benefits Authority<br>
                 <u>Privacy Policy</u>
             </p>
         </div>
+        <div>
+        <button class="btn btn-secondary register-btn" style="width: 300px; background-color: #e9d1d1;" type="submit" (click)="onSaveUser()">Submit</button>
+      </div>
     </form>
 </div>
