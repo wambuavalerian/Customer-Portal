@@ -13,9 +13,8 @@ import { OtpComponent } from './otp/otp.component';
 import { FormsModule } from '@angular/forms';
 import { ClaimsComponent } from './claims/claims.component';
 import { NewClaimComponent } from './claims/new-claim/new-claim.component';
-import { ClaimHistoryComponent } from './claims/claim-history/claim-history.component';
 import { ReactiveFormsModule } from '@angular/forms';
-
+import { HttpClient, HttpClientModule } from '@angular/common/http';
  
 
 @NgModule({
@@ -29,9 +28,6 @@ import { ReactiveFormsModule } from '@angular/forms';
     OtpComponent,
     ClaimsComponent,
     NewClaimComponent,
-    ClaimHistoryComponent,
-    
-
     
   ],
   imports: [
@@ -39,7 +35,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     AppRoutingModule,
     BrowserAnimationsModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [
     // provideClientHydration()
